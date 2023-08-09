@@ -1,0 +1,40 @@
+{
+  "name": "frontend-of-predicting-academic-performance",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3002",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "eslint src/ --fix"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.15",
+    "@heroicons/react": "^2.0.18",
+    "@types/node": "20.4.1",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "apexcharts": "^3.41.0",
+    "axios": "^1.4.0",
+    "formik": "^2.4.2",
+    "next": "13.4.9",
+    "react": "18.2.0",
+    "react-apexcharts": "^1.4.1",
+    "react-calendar": "^4.6.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "3.3.2",
+    "typescript": "5.1.6",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.14",
+    "eslint": "8.44.0",
+    "eslint-config-next": "13.4.9",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-prettier": "5.0.0",
+    "postcss": "8.4.25",
+    "prettier": "3.0.0"
+  }
+}

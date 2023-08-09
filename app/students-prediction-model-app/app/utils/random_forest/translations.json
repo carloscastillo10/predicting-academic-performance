@@ -1,0 +1,13 @@
+{
+    "province": "provincia",
+    "canton": "canton",
+    "age": "edad",
+    "sex": "sexo",
+    "numberFailures": "numero_reprobaciones",
+    "aab1": "aab1_nota",
+    "acdb1": "acdb1_nota",
+    "apeb1": "apeb1_nota",
+    "aab2": "aab2_nota",
+    "acdb2": "acdb2_nota",
+    "apeb2": "apeb2_nota"
+}

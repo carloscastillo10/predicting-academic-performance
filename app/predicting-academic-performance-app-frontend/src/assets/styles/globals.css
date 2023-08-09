@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --custom-color: #003f72
+}
+
+button {
+  transition: ease-in-out .3s;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: #cacad8;
+}
+
+.scrollbar-show::-webkit-scrollbar {
+  display: block;
+}
+
+.scrollbar-x-hidden::-webkit-scrollbar {
+  height: 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  appearance: textfield;
+}

@@ -1,0 +1,90 @@
+.content > * {
+  animation-name: fadeSlideIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeSlideIn {
+  from {
+      opacity: 0;
+      transform: translateY(10%);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.success g {
+  stroke: #16a34a;
+}
+
+.error g {
+  stroke: #ee5c4f;
+}
+
+.icon circle,
+.icon polyline,
+.icon line {
+  animation: icon-loader 1s ease-in-out forwards;
+  transition: stroke 0.6s;
+}
+
+.circle {
+  stroke-dashoffset: 69.12;
+  transform: rotate(-90deg);
+  transform-origin: 12px 12px;
+}
+.polyne {
+  stroke-dashoffset: 14.2;
+}
+
+.line {
+  stroke-dashoffset: 10;
+}
+
+.icon:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.icon:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+@keyframes icon-loader {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
+
+.button__loading {
+  border-left-color: var(--custom-color) !important;
+  border-right-color: var(--custom-color) !important;
+  box-sizing: border-box;
+  border: 4px solid transparent;
+  border-color: transparent;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  vertical-align: top;
+  background-color: transparent;
+  color: transparent;
+  cursor: default;
+  border-radius: 100%;
+  -webkit-animation: rotate-loading 1.5s linear 0s infinite normal;
+  animation: rotate-loading 1.5s linear 0s infinite normal;
+  user-select: none;
+}
+
+@keyframes rotate-loading {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
